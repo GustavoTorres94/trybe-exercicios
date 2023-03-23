@@ -6,8 +6,7 @@
   
   .goomba {
     width: 100px;
-    position: absolute;
-    float: left;
+    position: absolute;    
     bottom: 450px;
     left: 150px;
   }
