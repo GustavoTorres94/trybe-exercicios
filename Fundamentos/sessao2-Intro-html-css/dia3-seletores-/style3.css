@@ -2,19 +2,26 @@ ol {
     background-color: yellow;
 }
 
-.nPar {
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+/* .nPar {
     color: green;
 }
 
 .nImp {
     text-transform: uppercase;
-}
+} */
 
 .headerChange {
     color: red;    
 }
 
-.headerChange.em {
+.headerChange em {
     font-size: 40px;
     border: 1px solid black;
 }
@@ -27,32 +34,58 @@ li em {
     font-weight: bold;
 }
 
-.tres {
+#linguagens li:not(:nth-child(n + 4)) {
     color: blue;
 }
+
+
+/* .tres {
+    color: blue;
+} */
 
 .slackFlack:hover {
     color: orangered;
     font-weight: bold;
 }
-
 .w3s:hover {
     color: green;
-    font-weight: bold;
+    font-weight: 700;
 }
-
 .mdn:hover {
     color: black;
-    font-weight: bold;
+    font-weight: 700;
 }
-
 .dev:hover {
     color: yellow;
-    font-weight: bold;
+    font-weight: 700;
     background-color: black;
 }
-
 .trybe:hover {
     color: green;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+/*
+#aliados li a:hover {
+  font-weight: 700;
+}
+#aliados li a[href*="stackoverflow"] {
+  color: orange;
+}
+#aliados li a[href*="w3schools"] {
+  color: green;
+}
+#aliados li a[href*="mozilla"] {
+  color: black;
+}
+#aliados li a[href*="devdocs"] {
+  color: yellow;
+}
+#aliados li a[href*="trybe"] {
+  color: green;
+}
+*/
+
+.rosa {
+    background-color: pink;
 }
