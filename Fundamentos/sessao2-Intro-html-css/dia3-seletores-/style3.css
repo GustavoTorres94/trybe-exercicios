@@ -1,0 +1,58 @@
+ol {
+    background-color: yellow;
+}
+
+.nPar {
+    color: green;
+}
+
+.nImp {
+    text-transform: uppercase;
+}
+
+.headerChange {
+    color: red;    
+}
+
+.headerChange.em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;    
+}
+
+li em {
+    font-weight: bold;
+}
+
+.tres {
+    color: blue;
+}
+
+.slackFlack:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+.w3s:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.mdn:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.dev:hover {
+    color: yellow;
+    font-weight: bold;
+    background-color: black;
+}
+
+.trybe:hover {
+    color: green;
+    font-weight: bold;
+}
