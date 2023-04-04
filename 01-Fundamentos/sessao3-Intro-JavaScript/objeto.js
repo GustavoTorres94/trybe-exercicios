@@ -41,3 +41,99 @@ let names = {
   }
   
   // #########################################################################
+
+  let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+info['recorrente'] = 'sim' // tem que ter aspas para adicionar a key;
+for (let i in info) {
+    console.log(info[i])
+}  
+
+let info2 = Object.assign({}, info)
+console.log(info2)
+
+info2.personagem = 'Tio Patinhas'
+info2.origem = "Chirstmas on Bear Mountain, Dell's Four Color Comics #178"
+info2.nota = 'O Último MacPatinhas'
+info.recorrente = 'Ambos recorrentes!'
+
+
+console.log(`${info.personagem} e ${info2.personagem}
+${info.origem} e ${info2.origem}
+${info.nota} e ${info2.origem}
+${info.recorrente}`)
+// ##############################################################################
+
+
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      }, 
+      {
+        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+        autor: 'JK Rowling',
+        editora: 'Rocco',
+      },
+    ],
+  };
+
+  console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome} se chama "${leitor.livrosFavoritos[0].titulo}"`)
+
+// #############################################################################################
+
+let order = {
+    name: 'Rafael Andrade',
+    phoneNumber: '11-98763-1416',
+    address: {
+      street: 'Rua das Flores',
+      number: '389',
+      apartment: '701',
+    },
+    order: {
+      pizza: {
+        marguerita: {
+          amount: 1,
+          price: 25,
+        },
+        pepperoni: {
+          amount: 1,
+          price: 20,
+        },
+      },
+      drinks: {
+        coke: {
+          type: 'Coca-Cola Zero',
+          price: 10,
+          amount: 1,
+        },
+      },
+      delivery: {
+        deliveryPerson: 'Ana Silveira',
+        price: 5,
+      },
+    },
+    payment: {
+      total: 60,
+    },
+  };
+  
+  function customerInfo(order) {
+    return console.log(`Olá, ${order.delivery.deliveryPerson}, entrega para: ${order[0]}.`)
+  }
+  
+  customerInfo(order);
+  
+  function orderModifier(order) {
+    // Adicione abaixo as informações necessárias.
+  }
+  
+  orderModifier(order);
