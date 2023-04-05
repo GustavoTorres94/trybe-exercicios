@@ -127,7 +127,10 @@ let order = {
   };
   
   function customerInfo(order) {
-    return console.log(`Olá, ${order.delivery.deliveryPerson}, entrega para: ${order[0]}.`)
+    for (let key in order) {
+        return console.log(`Olá, `) 
+    }
+    // return console.log(`Olá, ${order.delivery}, entrega para: ${order[0]}.`)
   }
   
   customerInfo(order);
@@ -137,3 +140,12 @@ let order = {
   }
   
   orderModifier(order);
+
+
+  function userInfo() {
+    const userEmail = 'maria@email.com';
+  
+    // Toda expressão dentro do escopo da função userInfo tem acesso à variável userEmail
+    console.log(userEmail);
+  }
+  userInfo();
