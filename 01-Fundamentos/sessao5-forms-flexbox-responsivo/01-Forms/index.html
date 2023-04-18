@@ -1,0 +1,71 @@
+<h1>Formulário</h1>
+
+<p>
+    Alguns atributos das tags:
+    1) required - campo obrigatorio |
+    2) aceita class
+    3) value = '' - dá valor ao campo
+    4) name = '' - para procurar o input pelo nome
+    5) id = '' - document
+    6) label for = '' - cria uma "etiqueta" para com o input. o for cria este vinculo compartilhando a id─ por exemplo.
+    7) textarea - descrição/bio/feedback ... cols= colunas rows= linhas
+    8) 
+</p>
+
+<form action="http://localhost:3003/usuarios" method="POST">
+    <label for="texto-nome">Usuário:</label>
+    <input type="text" name="nome" id="texto-nome"> <!--o name, neste caso é a referencia que o backEnd vai captar-->
+    <label for="ainda">Senha:</label>
+    <input type="password" name="senha" id="ainda"> <!-- se colocar input: ele ja filtra e coloca o type com o que eu quero-->
+    <!-- <textarea name="bio" id="libre" cols="30" rows="10"><textarea -->
+    <textarea name="bio" id="libre" cols="30" rows="10"></textarea> <!-- text area não é input. não precisa do input-->
+    <div>
+        <input type="radio" name="tipo" id="librre" value="Adm"> Admin <!-- bolinha para escolher tipo de usuario-->
+        <input type="radio" name="tipo" id="librre1" value="Reg"> Regular  <!-- mesma ideia do checkbox-->
+        <input type="radio" name="tipo" id="librre1" value="Prof"> professor <!-- No caso setamos o value para indicar ao back-end o que vai capturar-->
+    </div>
+    <div>
+        <input type="checkbox" name="ativo" id="asd"> Ativo
+    </div>
+    <!-- Selected cria um selecionável com as opções pré-definidas por nós:: para definir tenho que colocar as options dentro do selected
+    para procurar as options nos definimos um value -->
+    <select name="estado" id="asddd">
+        <option value="ac">Acre</option>
+        <option value="ba">Bahia</option>
+        <option value="mg">Minas Gerais</option>
+    </select>
+    <!-- Para quesito de múltipla escolha, podemos também usar o Selected multiple -->
+    <select name="interesses" multiple size="4"> <!-- preciso setar o multiple e o size do multiple -->
+        <option value="js">JavaScript</option>
+        <option value="css">CSS</option>
+        <option value="fe">Front-End</option>
+        <option value="be">Back-End</option>
+    </select>
+    
+    <input type="checkbox" name="checa" value="fut" checked> futebol
+    <input type="checkbox" name="checa" value="Raider"> NFL
+    <input type="checkbox" name="checa" value="Bulls"> NBA
+    <input type="checkbox" name="checa" value="maua"> Sinuca
+    <input type="checkbox" name="checa" value="formula"> F1
+
+    <input type="hidden" name="escondido" id="iduser"> <!-- não aparece no formulário -->
+    <!-- Testando outros inputs -->
+    <input type="color" name="color" id="oooo"> <!-- seleciona as cores para alguma coisa -->
+    <input type="date" name="date" id="sss">
+    <input type="datetime" name="datetime" id="dd">
+    <input type="datetime-local" name="dtl" id="dtlll">
+    <input type="email" name="mail" id="to">
+    <input type="file" name="arq" id="ivo">
+    <input type="image" src="img" alt="link da imagem"> <!-- pode ser usado para mostrar a imagem capturada pelo file -->
+    <input type="month" name="mes" id="dassa">
+    <input type="number" name="nnn" id="kkk">
+    <input type="range" name="range" id="alcance"> <!-- cria uma barra de alcance -->
+    <input type="reset" value="mu"> <!-- reseta o form -->
+    <input type="search" name="seras" id="goo">
+    <input type="submit" value="suub">
+    <input type="tel" name="ddd" id="013">
+    <input type="time" name="hora" id="hooo">
+    <input type="url" name="www" id="com">
+    <input type="week" name="wks" id="blind">
+    <button>incluir</button>
+</form>
