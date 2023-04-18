@@ -66,6 +66,18 @@ for (let i = = 0; i < teste.length; i++) {
     código do que quer ser feito em cada elemento.
 }
 
+pode transformar o HTML Collection em array, assim posso usar todos os comandos de uma array comum
+1) primeiro preciso declarar o documents em uma variabel
+2) depois uso esse comando: Array.from(variávelQueCrieiNoPasso1)
+3) profit
+
+Segundo mode de transformar o HTMLCollection em Array
+
+const sss = document.getElementsByClassName('xablau')
+1) faço um spread dessa variable 
+2) Arraysss = [...sss]
+3) Xablau
+
 
 ########################################################### document.getElementsByTagName('') ####################################
 
@@ -97,6 +109,60 @@ funciona quase da mesma maneira  que o querrySelector só que retorna uma array 
 retorna todos os elementos
 
 trabalha nos mesmos moldes do seletores de CSS
+
+retorna um NODELIST, nao um HTMLCollection
+Também pode ser transformada em uma Array 
+
+
+############################################################# document.parentNode('') ##################################################
+
+conseguimos acesssar o elemento pai de um elemento atravas do .parentNode
+document.querySelector('aa').parentNode.parentNode
+
+De olho na dica 👀: A propriedade parentNode está presente em todos os elementos HTML.
+Note que ela é uma propriedade, não uma função. Por isso, não é executada com parênteses.
+
+previousSibling.: retorna para o elemento irmão anterior, caso tenha. ANTERIOR
+
+nextSibling: avança pra o primeiro elemento da sequencia, caso haja. POSTERIOR pega  o proximo nó, idependente se for elemento(tag) ou não (puro)
+
+firstChild : Encontra o primeiro elemento filho associado
+
+lastChild : encontra o último elemnto filho associado
+
+parentElement: Retorna o elemento-pai. Nesse caso, se o nó-pai não for um elemento HTML, essa propriedade retornará null.
+
+childNodes: Retorna um NodeList com todos os nós filhos.
+
+children: Retorna um HTMLCollection com todos os elementos filhos.
+
+firstElementChild: Retorna o primeiro elemento filho.
+
+lastElementChild: Retorna o último elemento filho.
+
+nextElementSibling: Retorna o próximo elemento. ignora os textos puros e vai para a tag
+
+previousElementSibling: Retorna o elemento anterior.
+
+
+#################################################################### CRIANDO ELEMENTOS NO HTML !! #############################################
+
+
+Boa pratica é usar variável pra quase tudo 
+
+
+createElement('tag')
+
+para criar, pode ser criado qualquer tag que deseharmos, só resta estudar pra saber como !!
+o createElement não adiciona nada ao HTML
+
+para adicionar o  elemento criado devemos usar o comando 
+
+appendChild(ELEMENTOFILHO)
+
+é adicionado o elemento filho. então devemos colocar o elemento pai em uma varaável e adicionar o elemento filho como se estivesse recebendo
+
+cuidado pra não substituir!!
 
 
  */

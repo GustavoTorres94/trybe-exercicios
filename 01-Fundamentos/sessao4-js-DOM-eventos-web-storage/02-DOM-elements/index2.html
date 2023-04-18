@@ -1,0 +1,27 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    let newElement = document.createElement('div');
+    let localNewElement = document.getElementById('pai');
+    localNewElement.appendChild(newElement);
+
+    let newElement2 = document.createElement('div');
+    let localNewElement2 = document.getElementById('elementoOndeVoceEsta');
+    localNewElement2.appendChild(newElement2);
+
+    let newElement3 = document.createElement('div');
+    let localNewElement3 = document.getElementById('primeiroFilhoDoFilho');
+    localNewElement3.appendChild(newElement3);
+
+    let thirdChild = document.querySelectorAll('div')[2]
+  </script>
