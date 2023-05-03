@@ -1,15 +1,18 @@
 <h1>Formulário</h1>
 
 <p>
-    Alguns atributos das tags:
-    1) required - campo obrigatorio |
-    2) aceita class
-    3) value = '' - dá valor ao campo
-    4) name = '' - para procurar o input pelo nome
-    5) id = '' - document
-    6) label for = '' - cria uma "etiqueta" para com o input. o for cria este vinculo compartilhando a id─ por exemplo.
-    7) textarea - descrição/bio/feedback ... cols= colunas rows= linhas
-    8) 
+    Alguns atributos das tags:<br>
+    1) required - campo obrigatorio |<br>
+    2) aceita class<br>
+    3) value = '' - dá valor ao campo<br>
+    4) name = '' - para procurar o input pelo nome<br>
+    5) id = '' - document<br>
+    6) label for = '' - cria uma "etiqueta" para com o input. o for cria este vinculo compartilhando a id─ por exemplo.<br>
+    7) textarea - descrição/bio/feedback ... cols= colunas rows= linhas<br>
+    8) checkbox : name, id, valeu - checked signifca valor já marcado; <br>
+    9) radio: checkbox que perimite so uma opção / o name precisa ser sempre igual, em caso de diferença sera permitido marcar mais de um;  <br>
+                dica: envolver cada radio em uma label perimite que ao clicar no texto a checkbox seja preemchida <br>
+    10) 
 </p>
 
 <form action="http://localhost:3003/usuarios" method="POST">
@@ -42,11 +45,11 @@
         <option value="be">Back-End</option>
     </select>
     
-    <input type="checkbox" name="checa" value="fut" checked> futebol
-    <input type="checkbox" name="checa" value="Raider"> NFL
-    <input type="checkbox" name="checa" value="Bulls"> NBA
-    <input type="checkbox" name="checa" value="maua"> Sinuca
-    <input type="checkbox" name="checa" value="formula"> F1
+    <input type="checkbox" name="checa" id="ychaca-1" value="fut" checked> futebol
+    <input type="checkbox" name="checa" id="ychaca-2" value="Raiders"> NFL
+    <input type="checkbox" name="checa" id="ychaca-3" value="Bulls"> NBA
+    <input type="checkbox" name="checa" id="ychaca-4" value="maua"> Sinuca
+    <input type="checkbox" name="checa" id="ychaca-5" value="formula"> F1
 
     <input type="hidden" name="escondido" id="iduser"> <!-- não aparece no formulário -->
     <!-- Testando outros inputs -->

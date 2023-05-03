@@ -274,3 +274,4 @@ function verificaFimPalavra (string) {
     }
 }
 verificaFimPalavra('trybe')
+
